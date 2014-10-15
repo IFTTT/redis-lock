@@ -78,6 +78,18 @@ class Redis
         return false
       end
     end
+
+    # Check whether a lock has been acquired on a given key
+
+    def lock_acquired?(key)
+      current_lock_key = lock_key(key)
+      lock_value = self.get(current_lock_key)
+      if lock_value
+        true
+      else
+        false
+      end
+    end
   
     private
   

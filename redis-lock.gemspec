@@ -4,8 +4,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{jashmenn-redis-lock}
-  s.version = "0.1.1"
+  s.name = %q{ifttt-redis-lock}
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Patrick Tulskie"]
@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
      "spec/redis_spec.rb",
      "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/PatrickTulskie/redis-lock}
+  s.homepage = %q{http://github.com/IFTTT/redis-lock}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.4.1}
